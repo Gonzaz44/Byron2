@@ -1,0 +1,38 @@
+@use "base/variables" as v;
+
+.soporte-footer {
+   display: grid;
+  grid-template-columns: 20% 50% 30%;
+  text-align: center;
+  background-color: v.$grisOscuro;
+  padding: 3rem 0;
+  margin: 0;
+  line-height: 25px;
+
+  
+}
+
+.copyrigth {
+  color: v.$blanco;
+  font-size: 1.2rem;
+  grid-column: 2/3;
+  text-align: center;
+ 
+  
+}
+
+.contenedor-footer {
+  display: flex;
+  transform: translateX(30%) translateY(50%);
+  gap: 4rem;
+  
+  a {
+  color: v.$blanco;
+  font-family: v.$fuente_principal;
+  font-size: 2.2rem;
+  &:hover {
+    color: v.$amarillo;
+  }
+  }
+}
+

@@ -1,0 +1,49 @@
+@use "base/mixins" as m;
+@use "base/variables" as v;
+
+
+.contenido { 
+  .alinear_parrafo {
+ height: 100px;
+ width: 800px;
+ margin: 0 auto;
+ padding: 1rem;
+}
+}
+
+.menues {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 4rem auto;
+  max-width: 90rem;
+  width: 90%;
+ 
+}
+
+.menues-imagen {
+  margin: 4rem 4rem;
+}
+
+.menues-cena {
+  margin: 3rem auto;
+}
+
+.boton {
+  display: block;
+  font-family: v.$fuente_principal;
+  color: v.$blanco;
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-radius: 2px;
+  background-color: v.$amarillo;
+  width: 15rem;
+  height: 4rem;
+}
+
+.descripcion-parrafo {
+  text-align:justify;
+}
